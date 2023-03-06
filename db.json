@@ -1,141 +1,140 @@
 {
-    "sneakers": [
+  "sneakers": [
+    {
+      "id": 1,
+      "brand": "Nike",
+      "model": "Air Jordan 1",
+      "colorway": "Bred",
+      "releaseYear": 1985,
+      "imageUrl": "https://i.ebayimg.com/images/g/EiYAAOSw915joNvf/s-l1600.jpg",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "brand": "Adidas",
+      "model": "Yeezy Boost 350 V2",
+      "colorway": "Zebra",
+      "releaseYear": 2017,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
+      "price": 220
+    },
+    {
+      "id": 3,
+      "brand": "Converse",
+      "model": "Chuck Taylor All Star",
+      "colorway": "Classic Black",
+      "releaseYear": 1917,
+      "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
+      "price": 50
+    },
+    {
+      "id": 4,
+      "brand": "Puma",
+      "model": "RS-X",
+      "colorway": "White",
+      "releaseYear": 2018,
+      "imageUrl": "https://cdna.lystit.com/photos/footshop/c86be2ba/puma-White-Rs-x-Winterized-White.jpeg",
+      "price": 110
+    },
+    {
+      "id": 5,
+      "brand": "New Balance",
+      "model": "990v5",
+      "colorway": "Grey",
+      "releaseYear": 2019,
+      "imageUrl": "https://nb.scene7.com/is/image/NB/w990gl5_nb_05_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600",
+      "price": 175
+    },
+    {
+      "id": 6,
+      "brand": "Reebok",
+      "model": "Classic Leather",
+      "colorway": "White",
+      "releaseYear": 1983,
+      "imageUrl": "https://images.journeys.com/images/products/1_691818_FS_THERO.JPG",
+      "price": 75
+    },
+    {
+      "id": 7,
+      "brand": "Vans",
+      "model": "Old Skool",
+      "colorway": "Black and White",
+      "releaseYear": 1977,
+      "imageUrl": "https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$",
+      "price": 60
+    },
+    {
+      "id": 8,
+      "brand": "Under Armour",
+      "model": "Curry 7",
+      "colorway": "Red",
+      "releaseYear": 2020,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0099/5232/9785/products/3021258-605-1_grande.jpg?v=1612107127",
+      "price": 140
+    },
+    {
+      "id": 9,
+      "brand": "ASICS",
+      "model": "GEL-Kayano 5 360",
+      "colorway": "White and Black",
+      "releaseYear": 2019,
+      "imageUrl": "https://media.endclothing.com/media/catalog/product/0/5/05-12-2019_asics_gelkayano5360_whiteblackgrey_1021a160-102_bb_1.jpg",
+      "price": 170
+    },
+    {
+      "id": 10,
+      "brand": "Fila",
+      "model": "Disruptor II",
+      "colorway": "Triple White",
+      "releaseYear": 2018,
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/images.linnlive.com/653b77923ccaf8880876668c8108402e/11ccc58e-f3bf-477f-b766-92c8624f4d74.jpg",
+      "price": 65
+    }
+  ],
+  "users": 
+  [
       {
-        "id": 1,
-        "brand": "Nike",
-        "model": "Air Jordan 1",
-        "colorway": "Bred",
-        "releaseYear": 1985,
-        "imageUrl": "",
-        "price": 200
+          "id": 1,
+          "username": "Clement",
+          "email": "clement@example.com",
+          "password": "password123",
+          "firstName": "clement",
+          "lastName": "senou"
       },
       {
-        "id": 2,
-        "brand": "Adidas",
-        "model": "Yeezy Boost 350 V2",
-        "colorway": "Zebra",
-        "releaseYear": 2017,
-        "imageUrl": "",
-        "price": 220
-      },
-      {
-        "id": 3,
-        "brand": "Converse",
-        "model": "Chuck Taylor All Star",
-        "colorway": "Classic Black",
-        "releaseYear": 1917,
-        "imageUrl": "",
-        "price": 50
-      },
-      {
-        "id": 4,
-        "brand": "Puma",
-        "model": "RS-X",
-        "colorway": "White",
-        "releaseYear": 2018,
-        "imageUrl": "",
-        "price": 110
-      },
-      {
-        "id": 5,
-        "brand": "New Balance",
-        "model": "990v5",
-        "colorway": "Grey",
-        "releaseYear": 2019,
-        "imageUrl": "",
-        "price": 175
-      },
-      {
-        "id": 6,
-        "brand": "Reebok",
-        "model": "Classic Leather",
-        "colorway": "White",
-        "releaseYear": 1983,
-        "imageUrl": "",
-        "price": 75
-      },
-      {
-        "id": 7,
-        "brand": "Vans",
-        "model": "Old Skool",
-        "colorway": "Black and White",
-        "releaseYear": 1977,
-        "imageUrl": "",
-        "price": 60
-      },
-      {
-        "id": 8,
-        "brand": "Under Armour",
-        "model": "Curry 7",
-        "colorway": "Red",
-        "releaseYear": 2020,
-        "imageUrl": "",
-        "price": 140
-      },
-      {
-        "id": 9,
-        "brand": "ASICS",
-        "model": "GEL-Kayano 5 360",
-        "colorway": "White and Black",
-        "releaseYear": 2019,
-        "imageUrl": "",
-        "price": 170
-      },
-      {
-        "id": 10,
-        "brand": "Fila",
-        "model": "Disruptor II",
-        "colorway": "Triple White",
-        "releaseYear": 2018,
-        "imageUrl": "",
-        "price": 65
+          "id": 2,
+          "username": "myles",
+          "email": "miles@example.com",
+          "password": "password456",
+          "firstName": "myles",
+          "lastName": "Reyburn"
       }
-    ],
-    "users": 
-    [
-        {
-            "id": 1,
-            "username": "Clement",
-            "email": "clement@example.com",
-            "password": "password123",
-            "firstName": "John",
-            "lastName": "Doe"
-        },
-        {
-            "id": 2,
-            "username": "miles",
-            "email": "miles@example.com",
-            "password": "password456",
-            "firstName": "Jane",
-            "lastName": "Doe"
-        }
-        ],
-    "orders": [
-        {
-            "id": 1,
-            "userId": 1,
-            "sneakerId": 2,
-            "quantity": 2,
-            "totalPrice": 440,
-            "orderDate": "2023-02-28T12:34:56.789Z"
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "sneakerId": 7,
-            "quantity": 2,
-            "totalPrice": 120,
-            "orderDate": "2023-03-01T09:12:34.567Z"
-        },
-        {
-            "id": 3,
-            "userId": 1,
-            "sneakerId": 10,
-            "quantity": 1,
-            "totalPrice": 65,
-            "orderDate": "2023-03-03T15:20:10.123Z"
-        }
-    ]
- }
-       
-  
+      ],
+  "orders": [
+      {
+          "id": 1,
+          "userId": 1,
+          "sneakerId": 2,
+          "quantity": 2,
+          "totalPrice": 440,
+          "orderDate": "2023-02-28T12:34:56.789Z"
+      },
+      {
+          "id": 2,
+          "userId": 2,
+          "sneakerId": 7,
+          "quantity": 2,
+          "totalPrice": 120,
+          "orderDate": "2023-03-01T09:12:34.567Z"
+      },
+      {
+          "id": 3,
+          "userId": 1,
+          "sneakerId": 10,
+          "quantity": 1,
+          "totalPrice": 65,
+          "orderDate": "2023-03-03T15:20:10.123Z"
+      }
+  ]
+}
+   
