@@ -1,4 +1,4 @@
-# Sneaker-strore-App
+# Sneaker-store-App
 The data model for the app includes three main entities: sneakers page  and orders page. Here's a brief overview of each entity: 
 ## STORE PAGE
 The user should be able to see all the sneackers and their details(GET REQUEST).
