@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Sneakers({ sneaker}) {
+function Sneakers({ sneaker, handleAddToCart }) {
   const [quantity, setQuantity] = useState(sneaker.quantity);
   const [clickCount, setClickCount] = useState(0);
 
@@ -8,6 +8,7 @@ function Sneakers({ sneaker}) {
     if (quantity > 0) {
       setQuantity(quantity - 1);
       setClickCount(clickCount + 1);
+      handleAddToCart(sneaker);
     }
   };
 
