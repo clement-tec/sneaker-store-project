@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Header';
-import StorePage from './StorePage';
+import PageContainer from './PageContainer';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <StorePage/>
+      <PageContainer/>
     </div>
   );
 }

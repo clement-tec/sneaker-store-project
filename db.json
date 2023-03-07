@@ -7,7 +7,8 @@
       "colorway": "Bred",
       "releaseYear": 1985,
       "imageUrl": "https://i.ebayimg.com/images/g/EiYAAOSw915joNvf/s-l1600.jpg",
-      "price": 200
+      "price": 200,
+      "quantity": 3
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "colorway": "Zebra",
       "releaseYear": 2017,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
-      "price": 220
+      "price": 220,
+      "quantity": 5
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "colorway": "Classic Black",
       "releaseYear": 1917,
       "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
-      "price": 50
+      "price": 50,
+      "quantity": 7
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "colorway": "White",
       "releaseYear": 2018,
       "imageUrl": "https://cdna.lystit.com/photos/footshop/c86be2ba/puma-White-Rs-x-Winterized-White.jpeg",
-      "price": 110
+      "price": 110,
+      "quantity": 4
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "colorway": "Grey",
       "releaseYear": 2019,
       "imageUrl": "https://nb.scene7.com/is/image/NB/w990gl5_nb_05_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600",
-      "price": 175
+      "price": 175,
+      "quantity": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "colorway": "White",
       "releaseYear": 1983,
       "imageUrl": "https://images.journeys.com/images/products/1_691818_FS_THERO.JPG",
-      "price": 75
+      "price": 75,
+      "quantity": 3
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "colorway": "Black and White",
       "releaseYear": 1977,
       "imageUrl": "https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$",
-      "price": 60
+      "price": 60,
+      "quantity": 5
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "colorway": "Red",
       "releaseYear": 2020,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0099/5232/9785/products/3021258-605-1_grande.jpg?v=1612107127",
-      "price": 140
+      "price": 140,
+      "quantity": 3
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "colorway": "White and Black",
       "releaseYear": 2019,
       "imageUrl": "https://media.endclothing.com/media/catalog/product/0/5/05-12-2019_asics_gelkayano5360_whiteblackgrey_1021a160-102_bb_1.jpg",
-      "price": 170
+      "price": 170,
+      "quantity": 6
     },
     {
       "id": 10,
@@ -88,53 +97,72 @@
       "colorway": "Triple White",
       "releaseYear": 2018,
       "imageUrl": "https://s3-eu-west-1.amazonaws.com/images.linnlive.com/653b77923ccaf8880876668c8108402e/11ccc58e-f3bf-477f-b766-92c8624f4d74.jpg",
-      "price": 65
+      "price": 65,
+      "quantity": 5
+    },
+    {
+      "brand": "Nike",
+      "model": "Air Force 1",
+      "colorway": "white",
+      "releaseYear": "1982",
+      "imageUrl": "https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/iot1dbjmzr7z6kfkoxrb.png",
+      "price": "100",
+      "id": 11,
+      "quantity": 21
+    },
+    {
+      "brand": "Nike",
+      "model": "Air Force 1 LV",
+      "colorway": "leather natural cowhide piping",
+      "releaseYear": "2022",
+      "imageUrl": "https://sneakerbardetroit.com/wp-content/uploads/2022/01/Louis-Vuitton-Nike-Air-Force-1-Auction.jpeg",
+      "price": "7800",
+      "id": 12,
+      "quantity": 2
     }
   ],
-  "users": 
-  [
-      {
-          "id": 1,
-          "username": "Clement",
-          "email": "clement@example.com",
-          "password": "password123",
-          "firstName": "clement",
-          "lastName": "senou"
-      },
-      {
-          "id": 2,
-          "username": "myles",
-          "email": "miles@example.com",
-          "password": "password456",
-          "firstName": "myles",
-          "lastName": "Reyburn"
-      }
-      ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Clement",
+      "email": "clement@example.com",
+      "password": "password123",
+      "firstName": "clement",
+      "lastName": "senou"
+    },
+    {
+      "id": 2,
+      "username": "myles",
+      "email": "miles@example.com",
+      "password": "password456",
+      "firstName": "myles",
+      "lastName": "Reyburn"
+    }
+  ],
   "orders": [
-      {
-          "id": 1,
-          "userId": 1,
-          "sneakerId": 2,
-          "quantity": 2,
-          "totalPrice": 440,
-          "orderDate": "2023-02-28T12:34:56.789Z"
-      },
-      {
-          "id": 2,
-          "userId": 2,
-          "sneakerId": 7,
-          "quantity": 2,
-          "totalPrice": 120,
-          "orderDate": "2023-03-01T09:12:34.567Z"
-      },
-      {
-          "id": 3,
-          "userId": 1,
-          "sneakerId": 10,
-          "quantity": 1,
-          "totalPrice": 65,
-          "orderDate": "2023-03-03T15:20:10.123Z"
-      }
+    {
+      "id": 1,
+      "userId": 1,
+      "sneakerId": 2,
+      "quantity": 2,
+      "totalPrice": 440,
+      "orderDate": "2023-02-28T12:34:56.789Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "sneakerId": 7,
+      "quantity": 2,
+      "totalPrice": 120,
+      "orderDate": "2023-03-01T09:12:34.567Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "sneakerId": 10,
+      "quantity": 1,
+      "totalPrice": 65,
+      "orderDate": "2023-03-03T15:20:10.123Z"
+    }
   ]
 }
-   

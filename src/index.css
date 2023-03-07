@@ -11,31 +11,37 @@ h1 {
   font-weight: 900;
   text-align: center;
   padding: 0.5rem 0;
+  background-color: rgb(112, 160, 199);
 }
 
 main {
   padding: 0 1rem;
 }
 
-.new-sneaker-form {
+div.shopping.cart button{
+  justify-content:left;
+  
+}
+
+.form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(9, 16, 114, 0.5);
+  background-color: rgba(164, 164, 185, 0.5);
 }
-
-.new-plant-form form {
+.form label{
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
-
-.new-sneaker-form input {
+.form div{
   margin-right: 2rem;
   flex: 1;
 }
-
-.new-sneaker-form button {
+.form button {
+  color: brown;
+  background-color: bisque;
   width: 150px;
 }
+
 
 .card {
   list-style: none;
