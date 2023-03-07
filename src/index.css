@@ -1,13 +1,73 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Playfair Display", serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.new-sneaker-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(9, 16, 114, 0.5);
+}
+
+.new-plant-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-sneaker-form input {
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.new-sneaker-form button {
+  width: 150px;
+}
+
+.card {
+  list-style: none;
+  
+}
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-top: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33% - 2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: calc(25% - 2rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(20% - 2rem);
+  }
 }
