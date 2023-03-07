@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from "react";
 import SneakersContainer from "./SneakersContainer";
-import FormNewSneaker from "./FormNewSneackers";
+import AddSneakerForm from "./AddSneakerForm";
+import ShoppingCart from "./ShoppingCart";
 
 function StorePage() {
-    const [renderSneakers, setRenderSneakers] = useState([])
+    const [renderSneakers, setRenderSneakers] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3000/sneakers")
@@ -11,13 +13,20 @@ function StorePage() {
         .then((json)=>setRenderSneakers(json));
     }, []);
 
-    function addSneaker(sneaker) {
+    const handleAddToCart = (sneaker) => {
+        setCartItems([...cartItems, sneaker]);
+      };
+
+
+    function onAdd(sneaker) {
         const newSneakers =[sneaker, ...renderSneakers];
         setRenderSneakers(newSneakers);
     }
+    
     return (
         <main>
-            <FormNewSneaker addSneaker={addSneaker}/>
+            <ShoppingCart cartItems={cartItems} handleAddToCart={handleAddToCart} />
+            <AddSneakerForm onAdd={onAdd}/>
             <SneakersContainer renderSneakers={renderSneakers}/>
         </main>
     )

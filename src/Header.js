@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <h1>
-        SNEAKER STRORE
+        SNEAKER STORE
         <span className="logo" role="img">
         👟
         </span>
