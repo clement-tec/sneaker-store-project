@@ -1,8 +1,8 @@
 import React from 'react';
-import CheckoutCard from './CheckoutPage.js';
+import CheckoutCard from './CheckoutCard.js';
 
 function CheckoutPage({sneakers}) {
-    const sneakerList = sneakers.map(sneaker => {
+    const sneakerList = sneakers?.map(sneaker => {
         return(
             <CheckoutCard key={sneaker.id} sneaker={sneaker} />
         )
