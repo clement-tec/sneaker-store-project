@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function SneakerCard({sneaker}) {
+function CartCard({sneaker}) {
     const [amountInCart, setAmountInCart] = useState(1);
 
     function handleChange(e) {
@@ -29,4 +29,4 @@ function SneakerCard({sneaker}) {
     )
 };
 
-export default SneakerCard;
+export default CartCard;

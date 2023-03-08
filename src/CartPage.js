@@ -1,14 +1,14 @@
 import React from 'react';
-import CheckoutCard from './CartCard.js';
+import CartCard from './CartCard.js';
 
-function CheckoutPage({sneakers}) {
+function CartPage({sneakers}) {
     const sneakerList = sneakers?.map(sneaker => {
         return(
-            <CheckoutCard key={sneaker.id} sneaker={sneaker} />
+            <CartCard key={sneaker.id} sneaker={sneaker} />
         )
     })
     return (
-        <table className="checkout-container">
+        <table className="cart-container">
             <thead>
                 <tr>
                     <th>Sneaker</th>
@@ -25,4 +25,4 @@ function CheckoutPage({sneakers}) {
     )
 };
 
-export default CheckoutPage;
+export default CartPage;
