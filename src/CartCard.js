@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function CartCard({sneaker}) {
+function CartCard({sneaker, onRemove}) {
     const [amountInCart, setAmountInCart] = useState(1);
 
     function handleChange(e) {
@@ -11,6 +11,10 @@ function CartCard({sneaker}) {
             alert("Not enough shoes in stock to fulfill the request!")
         }
     };
+
+    function handleRemove(e) {
+        onRemove(sneaker);
+    }
 
     return (
         <tr>
@@ -23,7 +27,7 @@ function CartCard({sneaker}) {
                 <input type="number" name="quantity" value={amountInCart} onChange={handleChange}/>
             </td>
             <td>
-                <button>Remove</button>
+                <button onClick={handleRemove}>Remove from cart</button>
             </td>
         </tr>
     )
