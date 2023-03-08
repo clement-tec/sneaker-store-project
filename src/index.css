@@ -42,7 +42,6 @@ div.shopping.cart button{
   width: 150px;
 }
 
-
 .card {
   list-style: none;
   
@@ -76,4 +75,27 @@ div.shopping.cart button{
   .card {
     width: calc(20% - 2rem);
   }
+}
+
+table {
+  width:90%;
+  border-collapse:collapse;
+}
+
+table, td, th {
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+
+thead>tr {
+  height:4rem;
+}
+
+tbody>tr {
+  height:8rem;
+}
+
+td>img {
+  max-width: auto;
+  max-height: 8rem;
 }
