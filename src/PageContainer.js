@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import StorePage from "./StorePage";
-// import CartPage from "./CartPage"
 import CheckoutPage from "./CheckoutPage"
+import CartPage from "./CartPage"
 
 function PageContainer() {
     const [renderSneakers, setRenderSneakers] = useState([]);
@@ -37,7 +37,7 @@ function PageContainer() {
         <div>
             <button onClick={handleClick}>{renderCheckout ? "View Store Page" : "View Checkout Page"}</button>
             {renderCheckout ? 
-                <CheckoutPage sneakers={cartItems}/> 
+                <CartPage sneakers={cartItems}/> 
                 : <StorePage renderSneakers={renderSneakers} cartItems={cartItems} handleAddToCart={handleAddToCart} onAdd={onAdd}/>}
         </div>
     )
