@@ -21,8 +21,8 @@
       "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
       "price": 220,
       "quantity": 5,
-      "numberInCart": 1,
-      "isInCart": true
+      "numberInCart": 0,
+      "isInCart": false
     },
     {
       "id": 3,
@@ -143,6 +143,18 @@
       "quantity": 2,
       "numberInCart": 0,
       "isInCart": false
+    },
+    {
+      "brand": "123",
+      "model": "saadsf",
+      "colorway": "agsgdfsdf",
+      "releaseYear": "2022",
+      "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
+      "price": "100",
+      "quantity": "3",
+      "numberInCart": 0,
+      "isInCart": false,
+      "id": 13
     }
   ],
   "users": [

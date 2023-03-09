@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Sneakers({ sneaker, handleAddToCart }) {
   const [quantity, setQuantity] = useState(sneaker.quantity);
   const [inCart, setInCart] = useState(sneaker.numberInCart);
+
+  useEffect( () => {
+    fetch(`http://localhost:4000/sneakers/${sneaker.id}`)
+    .then((response => response.json()))
+    .then((item) => {
+        setInCart(item.numberInCart)
+    })
+  }, [])
 
   const handleClick = () => {
     if (quantity > 0) {

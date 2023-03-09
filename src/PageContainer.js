@@ -30,7 +30,9 @@ function PageContainer() {
             alert("Already added to cart!");
         }
         else {
-            setCartItems([...cartItems, sneaker]);  
+            setCartItems(renderSneakers.filter((item) => {
+                return item.isInCart
+            }));  
         }
         
       };
@@ -46,8 +48,12 @@ function PageContainer() {
     }
 
     function onRemove(sneaker) {
-        setCartItems(cartItems?.filter((cartItem) => cartItem.id !== sneaker.id));
+        setCartItems(cartItems?.filter((cartItem) => cartItem.id !== sneaker.id))
     }
+
+    const itemsInCart = renderSneakers.filter((item) => {
+        return item.isInCart
+    });
 
 
 
@@ -78,7 +84,7 @@ function PageContainer() {
                     <CartPage sneakers={cartItems} onRemove={onRemove}/>
                 </Route>
                 <Route exact path="/CheckoutPage">
-                    <CheckoutPage sneakers={cartItems} onRemove={onRemove}/>
+                    <CheckoutPage sneakers={itemsInCart} onRemove={onRemove}/>
                 </Route>
             </Switch>
         </div>
