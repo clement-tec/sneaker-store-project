@@ -8,6 +8,7 @@ function PageContainer() {
     const [renderSneakers, setRenderSneakers] = useState([]);
     const [cartItems, setCartItems] = useState([]);
     const [renderCart, setRenderCart] = useState(false);
+    const [totalPrice, setTotalPrice] = useState(0)
 
     const [users, setUsers] = useState([])
 
@@ -22,7 +23,7 @@ function PageContainer() {
         .then((response)=>response.json())
         .then((json)=>setUsers(json));
 
-
+        
     }, []);
 
     function handleAddToCart(sneaker) {
@@ -84,7 +85,7 @@ function PageContainer() {
                     <CartPage sneakers={cartItems} onRemove={onRemove}/>
                 </Route>
                 <Route exact path="/CheckoutPage">
-                    <CheckoutPage sneakers={itemsInCart} onRemove={onRemove}/>
+                    <CheckoutPage sneakers={cartItems} onRemove={onRemove}/>
                 </Route>
             </Switch>
         </div>
