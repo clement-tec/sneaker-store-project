@@ -1,11 +1,25 @@
 import React, {useState} from "react";
 
 function CartCard({sneaker, onRemove}) {
-    const [amountInCart, setAmountInCart] = useState(1);
+    const [amountInCart, setAmountInCart] = useState(sneaker.numberInCart);
 
     function handleChange(e) {
         if (e.target.value <= sneaker.quantity) {
-            setAmountInCart(e.target.value);
+            fetch(`http://localhost:4000/sneakers/${sneaker.id}`, {
+                method: "PATCH",
+            headers:
+            {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                "numberInCart": parseInt(e.target.value)
+            })
+            })
+            .then(response => response.json())
+            .then((item) => {
+                setAmountInCart(item.numberInCart)
+            });
         }
         else {
             alert("Not enough shoes in stock to fulfill the request!")

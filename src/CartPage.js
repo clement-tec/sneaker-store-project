@@ -1,8 +1,8 @@
 import React from 'react';
 import CartCard from './CartCard.js';
 
-function CartPage({sneakers, onRemove }) {
-    const sneakerList = sneakers?.map(sneaker => {
+function CartPage({ sneakers, onRemove }) {
+    const sneakerList = sneakers.map(sneaker => {
         return(
             <CartCard key={sneaker.id} sneaker={sneaker} onRemove={onRemove}/>
         )

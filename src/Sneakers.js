@@ -2,13 +2,30 @@ import React, { useState } from "react";
 
 function Sneakers({ sneaker, handleAddToCart }) {
   const [quantity, setQuantity] = useState(sneaker.quantity);
-  const [clickCount, setClickCount] = useState(0);
+  const [inCart, setInCart] = useState(sneaker.numberInCart);
 
   const handleClick = () => {
     if (quantity > 0) {
-      setQuantity(quantity - 1);
-      setClickCount(clickCount + 1);
-      handleAddToCart(sneaker);
+      fetch(`http://localhost:4000/sneakers/${sneaker.id}`, {
+        method: "PATCH",
+            headers:
+            {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                "numberInCart": inCart + 1,
+                "isInCart": true
+            })
+      })
+      .then(response => response.json())
+      .then((item) => {
+        console.log(item.name, "isInCart:", item.isInCart)
+        setInCart(item.numberInCart)
+        setQuantity(item.quantity)
+        handleAddToCart(sneaker)
+      })
+      .then(console.log("numberInCart:", inCart))
     }
   };
 
@@ -20,9 +37,9 @@ function Sneakers({ sneaker, handleAddToCart }) {
       <p>{sneaker.colorway}</p>
       <p>{sneaker.releaseYear}</p>
       <p>Price: ${sneaker.price}</p>
-      <p>{quantity} pairs in Stock</p>
+      <p>{sneaker.quantity} pairs in Stock</p>
       <button className="primary" onClick={handleClick}>
-        Add to cart 🛒 ({clickCount})
+        Add to cart 🛒 ({inCart})
       </button>
     </li>
   );
