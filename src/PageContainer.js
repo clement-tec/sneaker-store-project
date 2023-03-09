@@ -23,7 +23,7 @@ function PageContainer() {
         .then((response)=>response.json())
         .then((json)=>setUsers(json));
 
-        
+
     }, []);
 
     function handleAddToCart(sneaker) {
@@ -74,15 +74,16 @@ function PageContainer() {
             <Link to = "/CartPage">
                 <button className="cart-button"> Cart 🛒 </button>
             </Link>
-            <Link to = "/CheckoutPage">
-                <button className="checkout-button"> Checkout $$ </button>
-            </Link>
+            
             <Switch>
                 <Route exact path="/">
                     <StorePage renderSneakers={renderSneakers} cartItems={cartItems} handleAddToCart={handleAddToCart} onAdd={onAdd}/>
                 </Route>
-                <Route exact path="/CartPage">
+                <Route exact path="/CartPage">                    
                     <CartPage sneakers={cartItems} onRemove={onRemove}/>
+                    <Link to = "/CheckoutPage">
+                        <button className="checkout-button"> Checkout $$ </button>
+                    </Link>
                 </Route>
                 <Route exact path="/CheckoutPage">
                     <CheckoutPage sneakers={cartItems} onRemove={onRemove}/>

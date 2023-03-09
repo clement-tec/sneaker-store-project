@@ -9,8 +9,8 @@
       "imageUrl": "https://i.ebayimg.com/images/g/EiYAAOSw915joNvf/s-l1600.jpg",
       "price": 200,
       "quantity": 3,
-      "numberInCart": 0,
-      "isInCart": false
+      "numberInCart": 1,
+      "isInCart": true
     },
     {
       "id": 2,
@@ -21,8 +21,8 @@
       "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
       "price": 220,
       "quantity": 5,
-      "numberInCart": 0,
-      "isInCart": false
+      "numberInCart": 2,
+      "isInCart": true
     },
     {
       "id": 3,
