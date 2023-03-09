@@ -6,7 +6,9 @@ function AddSneakerForm({ onAdd }) {
   const [colorway, setColorway] = useState('');
   const [releaseYear, setReleaseYear] = useState('');
   const [imageUrl, setImageUrl] = useState('');
-  const [price, setPrice] = useState('');
+  const [price, setPrice] = useState(0);
+  const [quantity, setQuantity] = useState(0);
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,8 +19,11 @@ function AddSneakerForm({ onAdd }) {
       releaseYear,
       imageUrl,
       price,
+      quantity,
+      numberInCart: 0,
+      isInCart: false
     };
-    fetch('http://localhost:3000/sneakers', {
+    fetch('http://localhost:4000/sneakers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -66,6 +71,12 @@ function AddSneakerForm({ onAdd }) {
         <label>
           Price:
           <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
+        </label>
+      </div>
+      <div>
+        <label>
+          Quantity:
+          <input type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)} />
         </label>
       </div>
       <button type="submit">Add Sneaker</button>

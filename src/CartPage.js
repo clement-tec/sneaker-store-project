@@ -1,8 +1,21 @@
 import React from 'react';
 import CartCard from './CartCard.js';
+import { useState, useEffect } from 'react';
 
-function CartPage({sneakers, onRemove }) {
-    const sneakerList = sneakers?.map(sneaker => {
+function CartPage({ sneakers, onRemove }) {
+    const [cartItems, setCartItems] = useState([])
+
+    useEffect( () => {
+        fetch("http://localhost:4000/sneakers")
+        .then((response) => response.json())
+        .then((item) => {
+            setCartItems(item.filter((shoe) => {
+                return shoe.isInCart
+            }))
+        });
+    }, [])
+
+    const sneakerList = cartItems.map(sneaker => {
         return(
             <CartCard key={sneaker.id} sneaker={sneaker} onRemove={onRemove}/>
         )

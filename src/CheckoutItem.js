@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-function CartCard({sneaker, onRemove}) {
+function CheckoutCard({sneaker, onRemove}) {
     const [amountInCart, setAmountInCart] = useState(0);
     const [cartStatus, setCartStatus] = useState(true)
 
@@ -11,34 +11,6 @@ function CartCard({sneaker, onRemove}) {
             setAmountInCart(item.numberInCart)
         })
     }, [])
-
-    console.log(sneaker.numberInCart)
-    console.log("amountInCart initial value:", amountInCart)
-
-    function handleChange(e) {
-        if (e.target.value <= sneaker.quantity) {
-            fetch(`http://localhost:4000/sneakers/${sneaker.id}`, {
-                method: "PATCH",
-            headers:
-            {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: JSON.stringify({
-                "numberInCart": parseInt(e.target.value)
-            })
-            })
-            .then(response => response.json())
-            .then((item) => {
-                console.log("weed:", item.numberInCart)
-                setAmountInCart(item.numberInCart)
-            })
-            .then(console.log(amountInCart));
-        }
-        else {
-            alert("Not enough shoes in stock to fulfill the request!")
-        }
-    };
 
     function handleRemove(e) {
         onRemove(sneaker);
@@ -72,7 +44,7 @@ function CartCard({sneaker, onRemove}) {
             </td>
             <td>{sneaker.price}</td>
             <td>
-                <input type="number" name="quantity" value={amountInCart} onChange={handleChange}/>
+                {amountInCart}
             </td>
             <td>
                 <button onClick={handleRemove}>Remove from cart</button>
@@ -81,4 +53,4 @@ function CartCard({sneaker, onRemove}) {
     )
 };
 
-export default CartCard;
+export default CheckoutCard;
