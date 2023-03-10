@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 
 function CheckoutCard({sneaker, onRemove}) {
     const [amountInCart, setAmountInCart] = useState(0);
-    const [cartStatus, setCartStatus] = useState(true)
 
     useEffect( () => {
         fetch(`http://localhost:4000/sneakers/${sneaker.id}`)
@@ -29,7 +28,6 @@ function CheckoutCard({sneaker, onRemove}) {
             .then(response => response.json())
             .then((item) => {
                 setAmountInCart(item.numberInCart)
-                setCartStatus(false)
             })
         e.target.parentElement.parentElement.remove()
     }

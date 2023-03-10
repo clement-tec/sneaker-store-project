@@ -2,12 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <header>
-      <h1>
+    <header className="header">
+      <h1 className="header__title">
         SNEAKER STORE
-        <span className="logo" role="img">
-        👟
-        </span>
       </h1>
     </header>
   );
