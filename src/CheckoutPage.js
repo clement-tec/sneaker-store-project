@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 function CheckoutPage({ sneakers, onRemove }) {
     const [cartItems, setCartItems] = useState([])
-    const [purchaseComplete, setPurchaseComplete] = useState(true)
+    const [purchaseComplete, setPurchaseComplete] = useState(false)
     let ongoingTotal = 0
     
 
