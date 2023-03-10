@@ -17,9 +17,6 @@ function CheckoutForm( {handlePurchase, ongoingTotal} ){
       handlePurchase();
     }
 
-    
-
-
     return(
         <div className="checkout-info">
             <p>Your total is: ${ongoingTotal}</p>

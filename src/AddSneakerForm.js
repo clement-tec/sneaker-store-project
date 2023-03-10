@@ -9,7 +9,6 @@ function AddSneakerForm({ onAdd }) {
   const [price, setPrice] = useState(0);
   const [quantity, setQuantity] = useState(0);
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const newSneaker = {
@@ -36,52 +35,56 @@ function AddSneakerForm({ onAdd }) {
 
   return (
     <form className='form' onSubmit={handleSubmit}>
-      <div>
-        <h3>ADD NEW SNEAKER</h3>
+      <div className='form__group'>
+        <h3>Add New Sneaker</h3>
+      </div>
+      <div className='form__group'>
         <label>
           Brand:
           <input type="text" value={brand} onChange={(e) => setBrand(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Model:
           <input type="text" value={model} onChange={(e) => setModel(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Colorway:
           <input type="text" value={colorway} onChange={(e) => setColorway(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Release Year:
           <input type="number" value={releaseYear} onChange={(e) => setReleaseYear(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Image URL:
           <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Price:
           <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
         </label>
       </div>
-      <div>
+      <div className='form__group'>
         <label>
           Quantity:
           <input type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)} />
         </label>
       </div>
-      <button type="submit">Add Sneaker</button>
+      <div className='form__group'>
+        <button className='form__button' type="submit">Add Sneaker</button>
+      </div>
     </form>
   );
 }
 
-export default AddSneakerForm
+export default AddSneakerForm;

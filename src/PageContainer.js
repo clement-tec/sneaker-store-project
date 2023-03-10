@@ -12,8 +12,6 @@ function PageContainer() {
 
     const [users, setUsers] = useState([])
 
-    const [] = useState([])
-
     useEffect(() => {
         fetch("http://localhost:4000/sneakers")
         .then((response)=>response.json())
@@ -22,8 +20,6 @@ function PageContainer() {
         fetch("http://localhost:4000/users")
         .then((response)=>response.json())
         .then((json)=>setUsers(json));
-
-
     }, []);
 
     function handleAddToCart(sneaker) {
@@ -35,16 +31,11 @@ function PageContainer() {
                 return item.isInCart
             }));  
         }
-        
       };
 
     function onAdd(sneaker) {
         const newSneakers = [sneaker, ...renderSneakers];
         setRenderSneakers(newSneakers);
-    }
-
-    function handleClick(e) {
-        setRenderCart(!renderCart);
     }
 
     function onRemove(sneaker) {
@@ -54,13 +45,6 @@ function PageContainer() {
     const itemsInCart = renderSneakers.filter((item) => {
         return item.isInCart
     });
-
-
-    
-
-
-
-    
 
     return (
         <div>

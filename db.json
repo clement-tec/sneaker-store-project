@@ -8,7 +8,7 @@
       "releaseYear": 1985,
       "imageUrl": "https://i.ebayimg.com/images/g/EiYAAOSw915joNvf/s-l1600.jpg",
       "price": 200,
-      "quantity": 2,
+      "quantity": 3,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -20,7 +20,7 @@
       "releaseYear": 2017,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
       "price": 220,
-      "quantity": 4,
+      "quantity": 0,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -32,7 +32,7 @@
       "releaseYear": 1917,
       "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
       "price": 50,
-      "quantity": 6,
+      "quantity": 5,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -128,7 +128,7 @@
       "imageUrl": "https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/iot1dbjmzr7z6kfkoxrb.png",
       "price": 100,
       "id": 11,
-      "quantity": 21,
+      "quantity": 20,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -143,18 +143,6 @@
       "quantity": 2,
       "numberInCart": 0,
       "isInCart": false
-    },
-    {
-      "brand": "123",
-      "model": "saadsf",
-      "colorway": "agsgdfsdf",
-      "releaseYear": "2022",
-      "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
-      "price": 100,
-      "quantity": "3",
-      "numberInCart": 0,
-      "isInCart": false,
-      "id": 13
     }
   ],
   "users": [

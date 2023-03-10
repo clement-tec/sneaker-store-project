@@ -44,8 +44,8 @@ function Sneakers({ sneaker, handleAddToCart }) {
       <p>{sneaker.releaseYear}</p>
       <p>Price: ${sneaker.price}</p>
       <p>{sneaker.quantity} pairs in Stock</p>
-      <button className="primary" onClick={handleClick}>
-        Add to cart 🛒 ({inCart})
+      <button className="primary" onClick={handleClick} disabled={inCart >= sneaker.quantity}>
+        {inCart >= sneaker.quantity ? "Out of Stock" : `Add to cart 🛒 (${inCart})`}
       </button>
     </li>
   );
