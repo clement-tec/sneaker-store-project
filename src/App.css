@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.checkout-cart-container {
+  overflow-y: auto;
+  height: 500px;
+}
+
+.thanks-for-shopping img {
+  width: 600px;
+}
+
+.thanks-for-shopping h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
