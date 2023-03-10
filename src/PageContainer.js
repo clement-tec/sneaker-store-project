@@ -38,7 +38,6 @@ function PageContainer() {
         
       };
 
-
     function onAdd(sneaker) {
         const newSneakers = [sneaker, ...renderSneakers];
         setRenderSneakers(newSneakers);
@@ -57,6 +56,7 @@ function PageContainer() {
     });
 
 
+    
 
 
 
@@ -86,7 +86,7 @@ function PageContainer() {
                     </Link>
                 </Route>
                 <Route exact path="/CheckoutPage">
-                    <CheckoutPage sneakers={cartItems} onRemove={onRemove}/>
+                    <CheckoutPage sneakers={itemsInCart} onRemove={onRemove} totalCost={totalPrice}/>
                 </Route>
             </Switch>
         </div>

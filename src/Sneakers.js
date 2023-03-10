@@ -13,7 +13,7 @@ function Sneakers({ sneaker, handleAddToCart }) {
   }, [])
 
   const handleClick = () => {
-    if (quantity > 0) {
+    if (quantity > 0 && inCart < quantity) {
       fetch(`http://localhost:4000/sneakers/${sneaker.id}`, {
         method: "PATCH",
             headers:
@@ -28,13 +28,11 @@ function Sneakers({ sneaker, handleAddToCart }) {
       })
       .then(response => response.json())
       .then((item) => {
-        console.log(item.name, "isInCart:", item.isInCart)
         setInCart(item.numberInCart)
         setQuantity(item.quantity)
         handleAddToCart(sneaker)
-      })
-      .then(console.log("numberInCart:", inCart))
-    }
+      });
+    }     
   };
 
   return (

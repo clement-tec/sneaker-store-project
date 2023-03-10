@@ -28,13 +28,11 @@ function CheckoutCard({sneaker, onRemove}) {
             })
             .then(response => response.json())
             .then((item) => {
-                console.log("removed, should be zero:", item.numberInCart)
                 setAmountInCart(item.numberInCart)
                 setCartStatus(false)
             })
         e.target.parentElement.parentElement.remove()
     }
-
 
     return (
         <tr>

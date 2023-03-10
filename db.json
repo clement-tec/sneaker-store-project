@@ -8,9 +8,9 @@
       "releaseYear": 1985,
       "imageUrl": "https://i.ebayimg.com/images/g/EiYAAOSw915joNvf/s-l1600.jpg",
       "price": 200,
-      "quantity": 3,
-      "numberInCart": 1,
-      "isInCart": true
+      "quantity": 2,
+      "numberInCart": 0,
+      "isInCart": false
     },
     {
       "id": 2,
@@ -20,9 +20,9 @@
       "releaseYear": 2017,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0518/7977/2315/products/image_cc9931e8-cc0b-4ad6-b3c6-fe4befbe22ac.png?v=1666836789",
       "price": 220,
-      "quantity": 5,
-      "numberInCart": 2,
-      "isInCart": true
+      "quantity": 4,
+      "numberInCart": 0,
+      "isInCart": false
     },
     {
       "id": 3,
@@ -32,7 +32,7 @@
       "releaseYear": 1917,
       "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
       "price": 50,
-      "quantity": 7,
+      "quantity": 6,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -44,7 +44,7 @@
       "releaseYear": 2018,
       "imageUrl": "https://cdna.lystit.com/photos/footshop/c86be2ba/puma-White-Rs-x-Winterized-White.jpeg",
       "price": 110,
-      "quantity": 4,
+      "quantity": 2,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -80,7 +80,7 @@
       "releaseYear": 1977,
       "imageUrl": "https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$",
       "price": 60,
-      "quantity": 5,
+      "quantity": 3,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -92,7 +92,7 @@
       "releaseYear": 2020,
       "imageUrl": "https://cdn.shopify.com/s/files/1/0099/5232/9785/products/3021258-605-1_grande.jpg?v=1612107127",
       "price": 140,
-      "quantity": 3,
+      "quantity": 6,
       "numberInCart": 0,
       "isInCart": false
     },
@@ -126,7 +126,7 @@
       "colorway": "white",
       "releaseYear": "1982",
       "imageUrl": "https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/iot1dbjmzr7z6kfkoxrb.png",
-      "price": "100",
+      "price": 100,
       "id": 11,
       "quantity": 21,
       "numberInCart": 0,
@@ -138,7 +138,7 @@
       "colorway": "leather natural cowhide piping",
       "releaseYear": "2022",
       "imageUrl": "https://sneakerbardetroit.com/wp-content/uploads/2022/01/Louis-Vuitton-Nike-Air-Force-1-Auction.jpeg",
-      "price": "7800",
+      "price": 7800,
       "id": 12,
       "quantity": 2,
       "numberInCart": 0,
@@ -150,7 +150,7 @@
       "colorway": "agsgdfsdf",
       "releaseYear": "2022",
       "imageUrl": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcfe819c1/images/d_08/M9160_D_08X1.jpg?sw=406",
-      "price": "100",
+      "price": 100,
       "quantity": "3",
       "numberInCart": 0,
       "isInCart": false,

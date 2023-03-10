@@ -12,11 +12,8 @@ function CartCard({sneaker, onRemove}) {
         })
     }, [])
 
-    console.log(sneaker.numberInCart)
-    console.log("amountInCart initial value:", amountInCart)
-
     function handleChange(e) {
-        if (e.target.value <= sneaker.quantity) {
+        if (e.target.value <= sneaker.quantity && e.target.value >= 0) {
             fetch(`http://localhost:4000/sneakers/${sneaker.id}`, {
                 method: "PATCH",
             headers:
@@ -30,13 +27,15 @@ function CartCard({sneaker, onRemove}) {
             })
             .then(response => response.json())
             .then((item) => {
-                console.log("weed:", item.numberInCart)
                 setAmountInCart(item.numberInCart)
-            })
-            .then(console.log(amountInCart));
+            });
         }
-        else {
+        else if(e.target.value > sneaker.quantity) {
             alert("Not enough shoes in stock to fulfill the request!")
+        } 
+        else if(e.target.value < 0){
+            alert("Cannot order negative shoes!")
+        } else{
         }
     };
 
@@ -56,7 +55,6 @@ function CartCard({sneaker, onRemove}) {
             })
             .then(response => response.json())
             .then((item) => {
-                console.log("removed, should be zero:", item.numberInCart)
                 setAmountInCart(item.numberInCart)
                 setCartStatus(false)
             })
